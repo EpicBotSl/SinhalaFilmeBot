@@ -92,14 +92,14 @@ async def startprivate(bot, message):
 
 
 ST_BTN = InlineKeyboardMarkup([[
-                InlineKeyboardButton('➕ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ➕', callback_data="HELP_CLB")
+                InlineKeyboardButton('➕ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ➕', url="https://t.me/EpicFilmeBot?startgroup=true")
             ],
             [
-                InlineKeyboardButton('࿉ᴍʏ ꜰɪʟᴍ ᴅᴀᴛᴀʙᴀꜱᴇ࿉', url='https://t.me/EpicApkDatabase')
+                InlineKeyboardButton('࿉ᴍʏ ꜰɪʟᴍ ᴅᴀᴛᴀʙᴀꜱᴇ࿉', url='https://t.me/SinhalaEnglishFilme')
             ],
             [
-                InlineKeyboardButton('☑ꜱᴜᴘᴘᴏʀᴛ', callback_data="DevsCalback"),
-                InlineKeyboardButton('ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ ᴄᴏᴍᴍɪᴜɴɪᴛʏ 🇱🇰', url='https://t.me/EpicBotsSl')
+                InlineKeyboardButton('☑ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/EpicChats'),
+                InlineKeyboardButton('ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ 🇱🇰', url='https://t.me/EpicBotsSl')
             ],
             [
                 InlineKeyboardButton('🔄ꜱᴇᴀʀᴄʜ ɪɴʟɪɴᴇ', switch_inline_query_current_chat=''),
