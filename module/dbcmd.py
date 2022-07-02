@@ -4,7 +4,7 @@ import logging
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from config import START_MSG, CHANNELS, ADMINS, INVITE_MSG
+from config import *
 from filmedb import Media, unpack_new_file_id
 
 logger = logging.getLogger(__name__)
