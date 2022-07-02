@@ -128,3 +128,11 @@ STAT_STICKER = ["CAACAgQAAxkBAAEFHRditZFgRBAPm-9bkFJUQKOjSEgxoQACfwsAAmgpeVF2roP
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 print("Commands.py Started🔥🌹")
+
+
+@Client.on_message(filters.text & filters.private)
+async def sendsret(bot, message):
+     await bot.send_message(message.chat.id, f'🔥Search Results For **{message.text}**', reply_markup=InlineKeyboardMarkup([[
+                 InlineKeyboardButton("Click Here",switch_inline_query_current_chat=message.text)
+                 ]]
+                  ))
