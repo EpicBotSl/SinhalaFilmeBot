@@ -52,7 +52,7 @@ async def send_msg(user_id, message):
         
 
 @Client.on_message(filters.command("start"))
-async def startprivates(client, message):
+async def start(client, message):
     #return
     chat_id = message.from_user.id
     if not await database.is_user_exist(chat_id):
@@ -67,7 +67,7 @@ async def startprivates(client, message):
         else:
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
     file_id = "https://telegra.ph/file/64865d56582fa87eba003.mp4"
-    await client.send_video(message.chat.id, file_id)
+    await client.reply_video(message.chat.id, file_id)
     text = f"Hi {message.from_user.mention}, Welcome To Epic Film Bot 📽️"
     reply_markup = ST_BTN
     await message.reply_text(
