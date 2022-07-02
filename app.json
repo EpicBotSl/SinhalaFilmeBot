@@ -13,8 +13,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/EpicDeves/FilmeBot",
-    "repository": "https://github.com/EpicDeves/FilmeBot",
+    "website": "https://github.com/EpicBotSl/SinhalaFilmeBot",
+    "repository": "https://github.com/EpicBotSl/SinhalaFilmeBot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
