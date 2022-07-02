@@ -70,9 +70,13 @@ async def startprivates(client, message):
     await client.send_sticker(message.chat.id, file_id)
     text = f"Hi {message.from_user.mention}, 🌼Choose language To Continue "
     reply_markup = ST_BTN
-        
-        
-
+    await message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        disable_web_page_preview=True,
+        quote=True
+    )
+       
 DATABASE_URI=DATABASE_URI
 database = Database(DATABASE_URI, "epic_bot") 
     
@@ -96,9 +100,23 @@ async def startprivate(bot, message):
     await bot.send_message(message.chat.id, text=text)
 
 
-ST_BTN = ([[
-InlineKeyboardButton ('Channel', 'https://t.me/EpicBotsSl')
-  ]
-])
+ST_BTN = InlineKeyboardMarkup([[
+                InlineKeyboardButton('🆘HELP🆘', callback_data="HELP_CLB")
+            ],
+            [
+                InlineKeyboardButton('👑Apk Database👑', url='https://t.me/EpicApkDatabase'),
+                InlineKeyboardButton('👩‍💻Bot Devs👩‍💻', callback_data="DevsCallback")
+            ],
+            [
+                InlineKeyboardButton('</ᴇᴘɪᴄ ʙᴏᴛs <s/ʟ>🇱🇰', url='https://t.me/EpicBotsSl')
+            ],
+            [
+                InlineKeyboardButton('🔍Search here🔄', switch_inline_query_current_chat=''),
+                InlineKeyboardButton('↗️Go inline↗️', switch_inline_query='')
+            ],
+            [ 
+                InlineKeyboardButton('🔄 Switch Language', callback_data="SI_CHANGE")
+            ]
+        ])
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 print("Commands.py Started🔥🌹")
