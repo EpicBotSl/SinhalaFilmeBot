@@ -117,7 +117,22 @@ STAT_STICKER = ["CAACAgQAAxkBAAEFHRditZFgRBAPm-9bkFJUQKOjSEgxoQACfwsAAmgpeVF2roP
                 "CAACAgQAAxkBAAEFHQ9itZFNixLf7fEZICaK8DF-Li967wACUAwAAmEq4VF8xFsUvkvQXSkE"              
          ]  
 
-START = "Hi Welcome To Epic Film Bot 📽️"
+START = """
+Hello {message.from_user.mention}, 😌
+
+I am Fast & Advance Sinhala & English Filme Downloader Bot🌝
+
+🌷This Bot Also Inline Supported 
+
+♻️You Can Get Any Sinhala & English Film frome Using This Bot
+
+═══════════════════════
+~
+Developer: [ɴᴀᴠᴀɴᴊᴀɴᴀ](https://t.me/NA_VA_N_J_NA1)
+Powerd by: [Epic Developers Community🇱🇰](https://t.me/EpicBotsSl)
+
+•Welcome to the New Age
+"""
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 print("Commands.py Started🔥🌹")
