@@ -79,7 +79,7 @@ def get_reply_markup(username, query):
     url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
     buttons = [
         [
-            InlineKeyboardButton('🔄Search again', switch_inline_query=''),
+            InlineKeyboardButton('🔄Search again', switch_inline_query_current_chat=''),
             InlineKeyboardButton('Epic Devs', url='https://t.me/EpicBotsSl'),
         ]
     ]
@@ -111,11 +111,5 @@ async def is_subscribed(bot, query):
 
     return False
 
-@Client.on_message(filters.text & filters.private)
-async def sendsret(bot, message):
-     await bot.send_message(message.chat.id, f'🔥Search Results For **{message.text}**', reply_markup=InlineKeyboardMarkup([[
-                 InlineKeyboardButton("Click Here",switch_inline_query_current_chat=message.text)
-                 ]]
-                  ))
 
 print("Inline Py Started Successfully 🔥")
