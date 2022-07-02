@@ -118,7 +118,7 @@ STAT_STICKER = ["CAACAgQAAxkBAAEFHRditZFgRBAPm-9bkFJUQKOjSEgxoQACfwsAAmgpeVF2roP
          ]  
 
 START = f"""
-Hello {Message.from_user.mention}
+Hello Peoples😌
 
 I am Fast & Advance Sinhala & English Filme Downloader Bot🌝
 
@@ -131,7 +131,7 @@ I am Fast & Advance Sinhala & English Filme Downloader Bot🌝
 Developer: [ɴᴀᴠᴀɴᴊᴀɴᴀ](https://t.me/NA_VA_N_J_NA1)
 Powerd by: [Epic Developers Community🇱🇰](https://t.me/EpicBotsSl)
 
-•Welcome to the New Age
+•`Welcome to the New Age`
 """
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
