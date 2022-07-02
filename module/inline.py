@@ -6,7 +6,7 @@ from pyrogram.errors import UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQueryResultCachedDocument
 
 from filmedb import get_search_results
-from config import *
+from config import CACHE_TIME, SHARE_BUTTON_TEXT, AUTH_USERS, AUTH_CHANNEL
 
 logger = logging.getLogger(__name__)
 cache_time = 0 if AUTH_USERS or AUTH_CHANNEL else CACHE_TIME
@@ -76,11 +76,11 @@ async def answer(bot, query):
 
 
 def get_reply_markup(username, query):
-    url = 't.me/share/url?url=' + quote(Search.format(username=username))
+    url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
     buttons = [
         [
-            InlineKeyboardButton('🔄Search again', switch_inline_query),
-            InlineKeyboardButton('Epic Bots', url='https://t.me/EpicBotsSl'),
+            InlineKeyboardButton('🔄Search again', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🔥Share bot', url=url),
         ]
     ]
     return InlineKeyboardMarkup(buttons)
