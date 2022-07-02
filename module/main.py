@@ -66,16 +66,7 @@ async def start(client, message):
             )
         else:
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
-    file_id = "CAADBQADKwUAAnOdCFbVNjXMRQTSTQI"
-    await client.reply_sticker(message.chat.id, file_id)
-    text = f"Hi {message.from_user.mention}, Welcome To Epic Film Bot 📽️"
-    reply_markup = ST_BTN
-    await message.reply_text(
-        text=text,
-        reply_markup=reply_markup,
-        disable_web_page_preview=True,
-        quote=True
-    )
+    await message.reply_photo("https://telegra.ph/file/57f8a652ee527500864e5.jpg", caption=START, reply_markup=ST_BTN)
        
 DATABASE_URI=DATABASE_URI
 database = Database(DATABASE_URI, "epic_bot") 
@@ -125,6 +116,8 @@ STAT_STICKER = ["CAACAgQAAxkBAAEFHRditZFgRBAPm-9bkFJUQKOjSEgxoQACfwsAAmgpeVF2roP
                 "CAACAgQAAxkBAAEFHRFitZFRwzQPYrVUQkxVP4yxF2Uw3gAC4AkAAu9GYFGTgHavjO_HLikE",
                 "CAACAgQAAxkBAAEFHQ9itZFNixLf7fEZICaK8DF-Li967wACUAwAAmEq4VF8xFsUvkvQXSkE"              
          ]  
+
+START = "Hi Welcome To Epic Film Bot 📽️"
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 print("Commands.py Started🔥🌹")
