@@ -29,3 +29,5 @@ DATABASE_NAME = environ['DATABASE_NAME']
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 OWNER_ID = environ['OWNER_ID']
 LOG_CHANNEL = environ['LOG_CHANNEL']
+
+SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
