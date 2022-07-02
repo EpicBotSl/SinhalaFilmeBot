@@ -92,21 +92,20 @@ async def startprivate(bot, message):
 
 
 ST_BTN = InlineKeyboardMarkup([[
-                InlineKeyboardButton('🆘HELP🆘', callback_data="HELP_CLB")
+                InlineKeyboardButton('➕ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ➕', callback_data="HELP_CLB")
             ],
             [
-                InlineKeyboardButton('👑Apk Database👑', url='https://t.me/EpicApkDatabase'),
-                InlineKeyboardButton('👩‍💻Bot Devs👩‍💻', callback_data="DevsCallback")
+                InlineKeyboardButton('࿉ᴍʏ ꜰɪʟᴍ ᴅᴀᴛᴀʙᴀꜱᴇ࿉', url='https://t.me/EpicApkDatabase')
             ],
             [
-                InlineKeyboardButton('</ᴇᴘɪᴄ ʙᴏᴛs <s/ʟ>🇱🇰', url='https://t.me/EpicBotsSl')
+                InlineKeyboardButton('☑ꜱᴜᴘᴘᴏʀᴛ', callback_data="DevsCallback")
             ],
             [
-                InlineKeyboardButton('🔍Search here🔄', switch_inline_query_current_chat=''),
-                InlineKeyboardButton('↗️Go inline↗️', switch_inline_query='')
+                InlineKeyboardButton('ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ ᴄᴏᴍᴍɪᴜɴɪᴛʏ 🇱🇰', url='https://t.me/EpicBotsSl')
             ],
-            [ 
-                InlineKeyboardButton('🔄 Switch Language', callback_data="SI_CHANGE")
+            [
+                InlineKeyboardButton('🔄ꜱᴇᴀʀᴄʜ ɪɴʟɪɴᴇ', switch_inline_query_current_chat=''),
+                InlineKeyboardButton('ꜱᴡɪᴛʜᴄ ɪɴʟɪɴᴇ ɪɴ ɢʀᴏᴜᴘ◀', switch_inline_query='')
             ]
         ])
 
@@ -118,20 +117,19 @@ STAT_STICKER = ["CAACAgQAAxkBAAEFHRditZFgRBAPm-9bkFJUQKOjSEgxoQACfwsAAmgpeVF2roP
          ]  
 
 START = f"""
-Hello Peoples😌
+𝒉𝒆𝒍𝒍𝒐 𝒑𝒆𝒐𝒑𝒍𝒆𝒔😌
 
-I am Fast & Advance Sinhala & English Filme Downloader Bot🌝
+ᚖ𝑰 𝒂𝒎 𝒇𝒂𝒔𝒕 & 𝑺𝒊𝒎𝒑𝒍𝒆 𝑺𝒊𝒏𝒉𝒂𝒍𝒂 & 𝑬𝒏𝒈𝒍𝒊𝒔𝒉 𝑭𝒊𝒍𝒎𝒆 𝒅𝒐𝒘𝒏𝒍𝒐𝒂𝒅𝒆𝒓 𝒃𝒐𝒕ᚖ
 
-🌷This Bot Also Inline Supported 
+ᨖ𝑻𝒉𝒊𝒔 𝑩𝒐𝒕 𝒂𝒍𝒔𝒐 𝑰𝒏𝒍𝒊𝒏𝒆 & 𝒈𝒓𝒐𝒖𝒑 𝒔𝒖𝒑𝒑𝒐𝒓𝒕𝒆𝒅
 
-♻️You Can Get Any Sinhala & English Film frome Using This Bot
+ᨖ𝒀𝒐𝒖 𝑪𝒂𝒏 𝒈𝒆𝒕 𝒂𝒏𝒚 𝑭𝒊𝒍𝒎𝒆 𝒇𝒓𝒐𝒎 𝒖𝒔𝒊𝒏𝒈 𝑻𝒉𝒊𝒔 𝒃𝒐𝒕
 
-═══════════════════════
-~
-Developer: [ɴᴀᴠᴀɴᴊᴀɴᴀ](https://t.me/NA_VA_N_J_NA1)
-Powerd by: [Epic Developers Community🇱🇰](https://t.me/EpicBotsSl)
-
-•`Welcome to the New Age`
+ᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔ
+ᚗDeveloperᚋ [ɴᴀᴠᴀɴᴊᴀɴᴀ](https://t.me/NA_VA_N_J_NA1)
+ᚗPowerd byᚋ [Epic Developers Community🇱🇰](https://t.me/EpicBotsSl)
+ᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔ
+•`𝓌ℯ𝓁𝒸ℴ𝓂ℯ 𝓉ℴ 𝓉𝒽ℯ 𝓃ℯ𝓌 𝒶ℊℯ`
 """
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
