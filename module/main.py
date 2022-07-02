@@ -67,7 +67,7 @@ async def start(client, message):
         else:
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
     file_id = "https://telegra.ph/file/64865d56582fa87eba003.mp4"
-    await client.reply_video(message.chat.id, file_id)
+    await message.reply_video(message.chat.id, file_id)
     text = f"Hi {message.from_user.mention}, Welcome To Epic Film Bot 📽️"
     reply_markup = ST_BTN
     await message.reply_text(
