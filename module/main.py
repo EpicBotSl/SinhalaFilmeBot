@@ -51,6 +51,12 @@ async def send_msg(user_id, message):
         return 500, f"{user_id} : {traceback.format_exc()}\n"
         
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+ST_BTN = ([[
+InlineKeyboardButton ('Channel', 'https://t.me/EpicBotsSl')
+  ]
+])
+#=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+
 
 @Client.on_message(filters.command("start"))
 async def startprivates(client, message):
@@ -79,3 +85,27 @@ async def startprivates(client, message):
     )
         
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+DATABASE_URI=DATABASE_URI
+database = Database(DATABASE_URI, "epic_bot") 
+    
+#•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+#State chek
+
+@Client.on_message(filters.command("state") & filters.user(ADMINS))   
+async def startprivate(bot, message):
+    countb = await database.total_users_count()
+    countb = await database.total_users_count()
+    count = await bot.get_chat_members_count(-1001620454933)
+    counta = await bot.get_chat_members_count(-1001620454933)
+    text=f"""**🏅Bot Total Users**
+**Members Count In Bot & Chane**
+╔═════════════════════════════════════════════╗
+   **🌱Chanel Members**  🏅`{count}`
+   **⚡Epic App Store Bot Users**  🏅`{countb}`
+╚═════════════════════════════════════════════╝
+"""
+    await bot.send_sticker(message.chat.id, random.choice(STAT_STICKER))
+    await bot.send_message(message.chat.id, text=text)
+
+#=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+print("Commands.py Started🔥🌹")
