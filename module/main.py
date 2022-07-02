@@ -50,13 +50,6 @@ async def send_msg(user_id, message):
     except Exception as e:
         return 500, f"{user_id} : {traceback.format_exc()}\n"
         
-#=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
-ST_BTN = ([[
-InlineKeyboardButton ('Channel', 'https://t.me/EpicBotsSl')
-  ]
-])
-#=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
-
 
 @Client.on_message(filters.command("start"))
 async def startprivates(client, message):
@@ -84,7 +77,8 @@ async def startprivates(client, message):
         quote=True
     )
         
-#=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+        
+
 DATABASE_URI=DATABASE_URI
 database = Database(DATABASE_URI, "epic_bot") 
     
@@ -107,5 +101,10 @@ async def startprivate(bot, message):
     await bot.send_sticker(message.chat.id, random.choice(STAT_STICKER))
     await bot.send_message(message.chat.id, text=text)
 
+
+ST_BTN = ([[
+InlineKeyboardButton ('Channel', 'https://t.me/EpicBotsSl')
+  ]
+])
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 print("Commands.py Started🔥🌹")
