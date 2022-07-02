@@ -118,7 +118,7 @@ STAT_STICKER = ["CAACAgQAAxkBAAEFHRditZFgRBAPm-9bkFJUQKOjSEgxoQACfwsAAmgpeVF2roP
          ]  
 
 START = f"""
-Hello {message.from_user.mention}
+Hello {Message.from_user.mention}
 
 I am Fast & Advance Sinhala & English Filme Downloader Bot🌝
 
