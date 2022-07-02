@@ -66,7 +66,7 @@ async def start(client, message):
             )
         else:
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
-    await message.reply_photo("https://telegra.ph/file/57f8a652ee527500864e5.jpg", caption=START, reply_markup=ST_BTN)
+    await message.reply_video("https://telegra.ph/file/64865d56582fa87eba003.mp4", caption=START, reply_markup=ST_BTN)
        
 DATABASE_URI=DATABASE_URI
 database = Database(DATABASE_URI, "epic_bot") 
