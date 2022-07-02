@@ -98,9 +98,7 @@ ST_BTN = InlineKeyboardMarkup([[
                 InlineKeyboardButton('࿉ᴍʏ ꜰɪʟᴍ ᴅᴀᴛᴀʙᴀꜱᴇ࿉', url='https://t.me/EpicApkDatabase')
             ],
             [
-                InlineKeyboardButton('☑ꜱᴜᴘᴘᴏʀᴛ', callback_data="DevsCallback")
-            ],
-            [
+                InlineKeyboardButton('☑ꜱᴜᴘᴘᴏʀᴛ', callback_data="DevsCalback"),
                 InlineKeyboardButton('ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ ᴄᴏᴍᴍɪᴜɴɪᴛʏ 🇱🇰', url='https://t.me/EpicBotsSl')
             ],
             [
