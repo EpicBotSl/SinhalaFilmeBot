@@ -80,12 +80,12 @@ async def startprivate(bot, message):
     countb = await database.total_users_count()
     count = await bot.get_chat_members_count(-1001620454933)
     counta = await bot.get_chat_members_count(-1001620454933)
-    text=f"""**🏅Bot Total Users**
-**Members Count In Bot & Chane**
-╔═════════════════════════════════════════════╗
-   **🌱Chanel Members**  🏅`{count}`
-   **⚡Epic App Store Bot Users**  🏅`{countb}`
-╚═════════════════════════════════════════════╝
+    text=f"""**😌Bot Total Users**
+**Members Count In Bot & Chanl**
+ᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔ
+   **Chanel State**  🏅`{count}`
+   **Filme Bot State**  🏅`{countb}`
+ᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔ
 """
     await bot.send_sticker(message.chat.id, random.choice(STAT_STICKER))
     await bot.send_message(message.chat.id, text=text)
@@ -140,3 +140,5 @@ async def sendsret(bot, message):
                  InlineKeyboardButton("Click Here",switch_inline_query_current_chat=message.text)
                  ]]
                   ))
+
+print("main.py Started Successfully 🍎🍓")
