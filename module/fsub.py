@@ -21,7 +21,8 @@ async def forcesub(bot, update):
 
 FORCESUB_TEXT = """
         ❌Aƈƈҽʂʂ Dҽɳιҽԃ❌ 
-♻️𝐏𝐥𝐞𝐚𝐬𝐞 𝐉𝐨𝐢𝐧 𝐨𝐮𝐫 𝐜𝐡𝐚𝐧𝐞 & 𝐓𝐫𝐲 𝐚𝐠𝐚𝐢𝐧♻️"
+♻️𝐏𝐥𝐞𝐚𝐬𝐞 𝐉𝐨𝐢𝐧 𝐨𝐮𝐫 𝐜𝐡𝐚𝐧𝐞 & 𝐓𝐫𝐲 𝐚𝐠𝐚𝐢𝐧♻️
+"""
 
 FORCESUB_BUTTONS = InlineKeyboardMarkup([[
                 InlineKeyboardButton('🔰 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 🔰', url='https://t.me/EpicBotsSl')
