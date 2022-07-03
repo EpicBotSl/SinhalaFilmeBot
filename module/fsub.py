@@ -25,8 +25,5 @@ FORCESUB_TEXT = """
 
 FORCESUB_BUTTONS = InlineKeyboardMarkup([[
                 InlineKeyboardButton('🔰 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 🔰', url='https://t.me/EpicBotsSl')
-                ],
-                [
-                InlineKeyboardButton('♻️ ʀᴇʟᴏᴀᴅ ♻️', callback_data="Reload")
             ]])
 print("fsub Working")
