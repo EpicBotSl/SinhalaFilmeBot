@@ -70,7 +70,7 @@ async def start(client, message):
     await message.reply_video("https://telegra.ph/file/64865d56582fa87eba003.mp4", caption=START, reply_markup=ST_BTN)
        
 DATABASE_URI=DATABASE_URI
-database = Database(DATABASE_URI, "epic_bot") 
+database = Database(DATABASE_URI, "filme_epic") 
     
 #•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 #State chek
