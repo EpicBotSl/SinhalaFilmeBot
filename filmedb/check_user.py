@@ -5,7 +5,7 @@ import logging
 
 from filmedb.database import Database
 
-database = Database(DATABASE_URI, "epic_bot")  
+database = Database(DATABASE_URI, "filme_epic")  
 
 async def handle_user_status(bot, cmd):
     chat_id = cmd.from_user.id
