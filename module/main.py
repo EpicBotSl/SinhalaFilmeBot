@@ -113,7 +113,14 @@ ST_BTN = InlineKeyboardMarkup([[
 print("Commands.py Started🔥🌹")
 
 
-@Client.on_message(filters.text & filters.private & filters.group)
+@Client.on_message(filters.text & filters.private)
+async def sendsret(bot, message):
+     await bot.send_message(message.chat.id, f'🔥Search Results For **{message.text}**', reply_markup=InlineKeyboardMarkup([[
+                 InlineKeyboardButton("Click Here",switch_inline_query_current_chat=message.text)
+                 ]]
+                  ))
+
+@Client.on_message(filters.text & filters.group)
 async def sendsret(bot, message):
      await bot.send_message(message.chat.id, f'🔥Search Results For **{message.text}**', reply_markup=InlineKeyboardMarkup([[
                  InlineKeyboardButton("Click Here",switch_inline_query_current_chat=message.text)
