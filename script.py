@@ -29,3 +29,7 @@ START = f"""
 ᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔ
 •`𝓌ℯ𝓁𝒸ℴ𝓂ℯ 𝓉ℴ 𝓉𝒽ℯ 𝓃ℯ𝓌 𝒶ℊℯ`
 """
+
+CLOSE_BUTTON = InlineKeyboardMarkup([[
+                InlineKeyboardButton('cloce', callback_data="cloce")
+            ]])
