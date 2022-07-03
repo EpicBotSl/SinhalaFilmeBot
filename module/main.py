@@ -60,9 +60,9 @@ async def start(client, message):
         data = await client.get_me()
         BOT_USERNAME = data.username
         await database.add_user(chat_id)
-        if -1001741009206:
+        if -1001618730343:
             await client.send_message(
-                -1001741009206,
+                -1001618730343,
                 f"#NEWUSER: \n\n**User:** [{message.from_user.first_name}](tg://user?id={message.from_user.id})\n\**ID:**{message.from_user.id}\n Started @{BOT_USERNAME} !!",
             )
         else:
@@ -113,7 +113,7 @@ ST_BTN = InlineKeyboardMarkup([[
 print("Commands.py Started🔥🌹")
 
 
-@Client.on_message(filters.text & filters.private)
+@Client.on_message(filters.text & filters.private & filters.group)
 async def sendsret(bot, message):
      await bot.send_message(message.chat.id, f'🔥Search Results For **{message.text}**', reply_markup=InlineKeyboardMarkup([[
                  InlineKeyboardButton("Click Here",switch_inline_query_current_chat=message.text)
