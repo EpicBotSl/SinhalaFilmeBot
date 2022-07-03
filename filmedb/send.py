@@ -16,6 +16,7 @@ import aiofiles
 import datetime
 import os
 import random
+from script import *
 import logging
 from pyrogram.errors.exceptions.bad_request_400 import *
 from pyrogram.errors import *
