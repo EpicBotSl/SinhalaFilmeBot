@@ -80,7 +80,7 @@ USER_DETAILS = "<b>PM FROM:</b>\nName: {} {}\nId: {}\nUname: @{}\nScam: {}\nRest
 PM_TXT_ATT = "<b>Message from:</b> {}\n<b>Name:</b> {}\n\n{}"
 PM_TXT_ATTS = "<b>Message from:</b> {}\n<b>Name:</b> {}"
 PM_MED_ATT = "<b>Message from:</b> {} \n<b>Name:</b> {}\n<b>Caption</b>:{}"
-LOG_CHANNEL = "-1001741009206"
+LOG_CHANNEL = "-1001618730343"
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 print("Pm Working")
 print("pm Started Success ☄️")
