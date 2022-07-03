@@ -120,11 +120,4 @@ async def sendsret(bot, message):
                  ]]
                   ))
 
-@Client.on_message(filters.text & filters.group)
-async def sendstem(bot, message):
-     await bot.send_message(message.chat.id, f'🔥Search Results For **{message.text}**', reply_markup=InlineKeyboardMarkup([[
-                 InlineKeyboardButton("Click Here",switch_inline_query_current_chat=message.text)
-                 ]]
-                  ))
-
 print("main.py Started Successfully 🍎🍓")
