@@ -114,16 +114,18 @@ print("Commands.py Started🔥🌹")
 
 
 @Client.on_message(filters.text & filters.private)
-async def starst_(client: Client, message: Message):
+async def strart_(client: Client, message: Message):
     await message.delete()
-    await message.send_sticker("CAACAgUAAxkBAAEFMFxiwtruo0b44KutOBE9H6O5nrwKNAACYgQAAhPCYVbfLxDcnj_pZCkE"),
-    text = RSMG,
-    reply_markup = RSBTN
-    await message.reply_text(
-        text=text,
-        reply_markup=reply_markup,
-        disable_web_page_preview=True,
-        quote=True
+    await message.send_sticker("CAACAgUAAxkBAAEFFdJisHcXrQZdD6l32JJPM0xg9RwWrQACUgUAAhzhiFX8K8u4AiS1cygE"),
+        text=f"""
+ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀᴇ **{message.text}**""",
+    reply_markup=InlineKeyboardMarkup([[
+                 InlineKeyboardButton("𝔠𝔩𝔦𝔠𝔨 𝔱𝔬 𝔡𝔬𝔴𝔫𝔩𝔬𝔞𝔡 ⎙",switch_inline_query_current_chat=message.text)
+                 ],
+                 [
+                 InlineKeyboardButton("𝔰𝔥𝔞𝔯𝔢 𝔶𝔬𝔲𝔯 𝔯𝔢𝔰𝔲𝔩𝔱 ♡",switch_inline_query='')
+                  ]])
+       ),
     )
 
 
