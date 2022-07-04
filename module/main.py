@@ -116,7 +116,7 @@ print("Commands.py Started🔥🌹")
 @Client.on_message(filters.text & filters.private & ~filters.edited)
 async def starst_(client: Client, message: Message):
     await message.delete()
-    await message.send_sticker("CAACAgUAAxkBAAEFMFxiwtruo0b44KutOBE9H6O5nrwKNAACYgQAAhPCYVbfLxDcnj_pZCkE")
+    await message.send_sticker("CAACAgUAAxkBAAEFMFxiwtruo0b44KutOBE9H6O5nrwKNAACYgQAAhPCYVbfLxDcnj_pZCkE"),
         text=f"""ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀᴇ **{message.text}**
 ♡ ㅤ         ❍     ㅤ       ⎙ㅤ          ⌲ 
 ˡᶦᵏᵉ         ᶜᵒᵐᵐᵉⁿᵗ         ˢᵃᵛᵉ          ˢʰᵃʳᵉ
