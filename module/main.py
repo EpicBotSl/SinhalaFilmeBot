@@ -113,13 +113,22 @@ ST_BTN = InlineKeyboardMarkup([[
 print("Commands.py Started🔥🌹")
 
 
-@Client.on_message(filters.text & filters.private)
-async def sendsret(bot, message):
-     await bot.send_sticker("CAACAgUAAxkBAAEFMFxiwtruo0b44KutOBE9H6O5nrwKNAACYgQAAhPCYVbfLxDcnj_pZCkE", f'ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀᴇ **{message.text}**', reply_markup=InlineKeyboardMarkup([[
+@Client.on_message(filters.text & filters.private & ~filters.edited)
+async def starst_(client: Client, message: Message):
+    await message.delete()
+    await message.send_sticker("CAACAgUAAxkBAAEFMFxiwtruo0b44KutOBE9H6O5nrwKNAACYgQAAhPCYVbfLxDcnj_pZCkE")
+        caption=f"""ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀᴇ **{message.text}**
+♡ ㅤ         ❍     ㅤ       ⎙ㅤ          ⌲ 
+ˡᶦᵏᵉ         ᶜᵒᵐᵐᵉⁿᵗ         ˢᵃᵛᵉ          ˢʰᵃʳᵉ
+""",
+    reply_markup=RSBTN
+
+
+RSBTN = InlineKeyboardMarkup([[
                  InlineKeyboardButton("𝔠𝔩𝔦𝔠𝔨 𝔱𝔬 𝔡𝔬𝔴𝔫𝔩𝔬𝔞𝔡 ⎙",switch_inline_query_current_chat=message.text)
                  ],
-                 [.
+                 [
                  InlineKeyboardButton("𝔰𝔥𝔞𝔯𝔢 𝔶𝔬𝔲𝔯 𝔯𝔢𝔰𝔲𝔩𝔱 ♡",switch_inline_query='')
-                  ))
+                  ]])
 
 print("main.py Started Successfully 🍎🍓")
