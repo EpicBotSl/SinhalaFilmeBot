@@ -117,7 +117,7 @@ print("Commands.py Started🔥🌹")
 async def starst_(client: Client, message: Message):
     await message.delete()
     await message.send_sticker("CAACAgUAAxkBAAEFMFxiwtruo0b44KutOBE9H6O5nrwKNAACYgQAAhPCYVbfLxDcnj_pZCkE"),
-text = RSMG
+    text = RSMG,
     reply_markup = RSBTN
     await message.reply_text(
         text=text,
