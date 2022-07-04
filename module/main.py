@@ -121,7 +121,7 @@ async def starst_(client: Client, message: Message):
 ♡ ㅤ         ❍     ㅤ       ⎙ㅤ          ⌲ 
 ˡᶦᵏᵉ         ᶜᵒᵐᵐᵉⁿᵗ         ˢᵃᵛᵉ          ˢʰᵃʳᵉ
 """,
-    reply_markup=RSBTN
+        reply_markup=RSBTN
 
 
 RSBTN = InlineKeyboardMarkup([[
