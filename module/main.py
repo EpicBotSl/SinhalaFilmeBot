@@ -117,11 +117,14 @@ print("Commands.py Started🔥🌹")
 async def starst_(client: Client, message: Message):
     await message.delete()
     await message.send_sticker("CAACAgUAAxkBAAEFMFxiwtruo0b44KutOBE9H6O5nrwKNAACYgQAAhPCYVbfLxDcnj_pZCkE"),
-        text=f"""ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀᴇ **{message.text}**
-♡ ㅤ         ❍     ㅤ       ⎙ㅤ          ⌲ 
-ˡᶦᵏᵉ         ᶜᵒᵐᵐᵉⁿᵗ         ˢᵃᵛᵉ          ˢʰᵃʳᵉ
-""",
-        reply_markup=RSBTN
+text = RSMG
+    reply_markup = RSBTN
+    await message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        disable_web_page_preview=True,
+        quote=True
+    )
 
 
 RSBTN = InlineKeyboardMarkup([[
@@ -130,5 +133,10 @@ RSBTN = InlineKeyboardMarkup([[
                  [
                  InlineKeyboardButton("𝔰𝔥𝔞𝔯𝔢 𝔶𝔬𝔲𝔯 𝔯𝔢𝔰𝔲𝔩𝔱 ♡",switch_inline_query='')
                   ]])
+
+RSMG = f"""ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀᴇ **{message.text}**
+♡ ㅤ         ❍     ㅤ       ⎙ㅤ          ⌲ 
+ˡᶦᵏᵉ         ᶜᵒᵐᵐᵉⁿᵗ         ˢᵃᵛᵉ          ˢʰᵃʳᵉ
+"""
 
 print("main.py Started Successfully 🍎🍓")
