@@ -118,14 +118,7 @@ async def strart_(client: Client, message: Message):
     await message.delete()
     await message.send_sticker("CAACAgUAAxkBAAEFFdJisHcXrQZdD6l32JJPM0xg9RwWrQACUgUAAhzhiFX8K8u4AiS1cygE"),
 text=f"ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀᴇ **{message.text}**",
-    reply_markup=InlineKeyboardMarkup([[
-                 InlineKeyboardButton("𝔠𝔩𝔦𝔠𝔨 𝔱𝔬 𝔡𝔬𝔴𝔫𝔩𝔬𝔞𝔡 ⎙",switch_inline_query_current_chat=message.text)
-                 ],
-                 [
-                 InlineKeyboardButton("𝔰𝔥𝔞𝔯𝔢 𝔶𝔬𝔲𝔯 𝔯𝔢𝔰𝔲𝔩𝔱 ♡",switch_inline_query='')
-                  ]])
-       ),
-    )
+    reply_markup=RSBTN
 
 
 RSBTN = InlineKeyboardMarkup([[
