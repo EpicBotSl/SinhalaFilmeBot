@@ -81,11 +81,11 @@ async def startprivate(bot, message):
     countb = await database.total_users_count()
     count = await bot.get_chat_members_count(-1001620454933)
     counta = await bot.get_chat_members_count(-1001620454933)
-    text=f"""**😌Bot Total Users**
-**Members Count In Bot & Chanl**
+    text=f"""**𝔱𝔬𝔱𝔞𝔩 𝔲𝔰𝔢𝔯𝔰**
+**𝔱𝔢𝔞𝔪 & 𝔟𝔬𝔱 𝔪𝔢𝔪𝔟𝔢𝔯 𝔠𝔬𝔲𝔫𝔱**
 ᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔ
-   **Chanel State**  🏅`{count}`
-   **Filme Bot State**  🏅`{countb}`
+   **𝔠𝔥𝔞𝔫𝔢𝔩 𝔰𝔱𝔞𝔱𝔢**  🏅`{count}`
+   **𝔣𝔦𝔩𝔪𝔢 𝔟𝔬𝔱 𝔰𝔱𝔞𝔱𝔢**  🏅`{countb}`
 ᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔᚔ
 """
     await bot.send_sticker(message.chat.id, random.choice(STAT_STICKER))
@@ -96,7 +96,7 @@ ST_BTN = InlineKeyboardMarkup([[
                 InlineKeyboardButton('➕ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ➕', url="https://t.me/EpicFilmeBot?startgroup=true")
             ],
             [
-                InlineKeyboardButton('࿉ᴍʏ ꜰɪʟᴍ ᴅᴀᴛᴀʙᴀꜱᴇ࿉', url='https://t.me/SinhalaEnglishFilme')
+                InlineKeyboardButton('࿉ᴍʏ ꜰɪʟᴍ ᴅᴀᴛᴀʙᴀꜱᴇ࿉', url='https://t.me/+tZqaN4Us6YM2ZjRl')
             ],
             [
                 InlineKeyboardButton('☑ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/EpicChats'),
@@ -115,9 +115,11 @@ print("Commands.py Started🔥🌹")
 
 @Client.on_message(filters.text & filters.private)
 async def sendsret(bot, message):
-     await bot.send_message(message.chat.id, f'ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀᴇ **{message.text}**', reply_markup=InlineKeyboardMarkup([[
+     await bot.send_sticker("CAACAgUAAxkBAAEFMFxiwtruo0b44KutOBE9H6O5nrwKNAACYgQAAhPCYVbfLxDcnj_pZCkE", f'ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀᴇ **{message.text}**', reply_markup=InlineKeyboardMarkup([[
                  InlineKeyboardButton("𝔠𝔩𝔦𝔠𝔨 𝔱𝔬 𝔡𝔬𝔴𝔫𝔩𝔬𝔞𝔡 ⎙",switch_inline_query_current_chat=message.text)
-                 ]]
+                 ],
+                 [.
+                 InlineKeyboardButton("𝔰𝔥𝔞𝔯𝔢 𝔶𝔬𝔲𝔯 𝔯𝔢𝔰𝔲𝔩𝔱 ♡",switch_inline_query='')
                   ))
 
 print("main.py Started Successfully 🍎🍓")
