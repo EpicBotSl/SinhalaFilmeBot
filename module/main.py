@@ -113,7 +113,7 @@ ST_BTN = InlineKeyboardMarkup([[
 print("Commands.py Started🔥🌹")
 
 
-@Client.on_message(filters.text & filters.private & ~filters.edited)
+@Client.on_message(filters.text & filters.private)
 async def starst_(client: Client, message: Message):
     await message.delete()
     await message.send_sticker("CAACAgUAAxkBAAEFMFxiwtruo0b44KutOBE9H6O5nrwKNAACYgQAAhPCYVbfLxDcnj_pZCkE"),
