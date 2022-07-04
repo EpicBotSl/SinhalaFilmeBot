@@ -113,7 +113,7 @@ ST_BTN = InlineKeyboardMarkup([[
 print("Commands.py Started🔥🌹")
 
 
-@Client.on_message(filters.command("apk {message.text}") & filters.text & filters.private)
+@Client.on_message(filters.command(['film', f'film {message.text}']) & filters.text & filters.private)
 async def sendsret(bot, message):
      await bot.send_message(message.chat.id, f'🔥Search Results For **{message.text}**', reply_markup=InlineKeyboardMarkup([[
                  InlineKeyboardButton("Click Here",switch_inline_query_current_chat=message.text)
