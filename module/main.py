@@ -18,7 +18,7 @@ import os
 import random
 import logging
 from script import *
-from fsub import *
+from module.fsub import *
 from pyrogram.errors.exceptions.bad_request_400 import *
 from pyrogram.errors import *
 from pyrogram.types import *
