@@ -56,7 +56,6 @@ async def send_msg(user_id, message):
 async def start(client, message):
     #return
     chat_id = message.from_user.id
-    if len(message.command) > 1 and message.command[1] == 'subscribe':
     if not await database.is_user_exist(chat_id):
         data = await client.get_me()
         BOT_USERNAME = data.username
