@@ -56,6 +56,7 @@ async def send_msg(user_id, message):
 async def start(client, message):
     #return
     chat_id = message.from_user.id
+    if len(message.command) > 1 and message.command[1] == 'subscribe':
     if not await database.is_user_exist(chat_id):
         data = await client.get_me()
         BOT_USERNAME = data.username
@@ -191,6 +192,8 @@ Stcr = ["CAACAgUAAxkBAAEFMFxiwtruo0b44KutOBE9H6O5nrwKNAACYgQAAhPCYVbfLxDcnj_pZCk
         "CAACAgQAAxkBAAEFMcdiw96o5bkasgABXxzeOzI8NtnNAkUAAuIWAAIqcsQM3-htLmmjJV8pBA",
         "CAACAgQAAxkBAAEFMcliw96wjC6dczUp9G7yKUotIuH8rwAC5BYAAipyxAzAWjB_nUAZIykE"
    ]
+
+#updated
 
 
 print("main.py Started Successfully 🍎🍓")
