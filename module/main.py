@@ -101,6 +101,9 @@ ST_BTN = InlineKeyboardMarkup([[
                 InlineKeyboardButton('♻️ꜱᴜᴘᴘᴏʀᴛ♻️', url='https://t.me/EpicChats')
             ],
             [
+                InlineKeyboardButton('📀ᴍʏ ꜰɪʟᴍ ᴅᴀᴛᴀʙᴀꜱᴇ📀', url='https://t.me/FilmZooon')
+            ],
+            [
                 InlineKeyboardButton('ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ 🇱🇰', url='https://t.me/EpicBotsSl')
             ],
             [
@@ -119,10 +122,14 @@ async def sendsret(bot, message):
      await message.delete()
      await bot.send_sticker(message.chat.id, random.choice(Stcr))
      text = f"""
-❍⌛ꜱᴇᴀʀᴄʜɪɴɢ ʀᴇꜱᴜʟᴛꜱ..
-  ᪣ 𝐅𝐢𝐥𝐦 𝐍𝐚𝐦𝐞 :  ༺**{message.text}**༻
-  ᪣ 𝐫𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 : ༺**{message.from_user.mention}**༻
-  ᪣ 𝐩𝐨𝐰𝐞𝐫𝐝 𝐛𝐲 : [𝑬𝒑𝒊𝒄 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒆𝒔](https://t.me/EpicBotsSl)
+❍⌛ꜱᴇᴀʀᴄʜɪɴɢ ʀᴇꜱᴜʟᴛꜱ.....
+
+  ᪣ 𝐅𝐢𝐥𝐦 𝐍𝐚𝐦𝐞 :  
+                ༺**{message.text}**༻
+  ᪣ 𝐫𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 : 
+                ༺**{message.from_user.mention}**༻
+  ᪣ 𝐩𝐨𝐰𝐞𝐫𝐝 𝐛𝐲 : 
+                [𝑬𝒑𝒊𝒄 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒆𝒔](https://t.me/EpicBotsSl)
 
  ♡ ㅤ         ❍     ㅤ       ⎙ㅤ          ⌲ 
  ˡᶦᵏᵉ         ᶜᵒᵐᵐᵉⁿᵗ         ˢᵃᵛᵉ          ˢʰᵃʳᵉ
@@ -146,10 +153,14 @@ async def sendsre(bot, message):
      await message.delete()
      await bot.send_sticker(message.chat.id, random.choice(Stcr))
      text = f"""
-❍⌛ꜱᴇᴀʀᴄʜɪɴɢ ʀᴇꜱᴜʟᴛꜱ..
-  ᪣ 𝐅𝐢𝐥𝐦 𝐍𝐚𝐦𝐞 :  ༺**{message.text}**༻
-  ᪣ 𝐫𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 : ༺**{message.from_user.mention}**༻
-  ᪣ 𝐩𝐨𝐰𝐞𝐫𝐝 𝐛𝐲 : [𝑬𝒑𝒊𝒄 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒆𝒔](https://t.me/EpicBotsSl)
+❍⌛ꜱᴇᴀʀᴄʜɪɴɢ ʀᴇꜱᴜʟᴛꜱ.....
+
+  ᪣ 𝐅𝐢𝐥𝐦 𝐍𝐚𝐦𝐞 :  
+                ༺**{message.text}**༻
+  ᪣ 𝐫𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 : 
+                ༺**{message.from_user.mention}**༻
+  ᪣ 𝐩𝐨𝐰𝐞𝐫𝐝 𝐛𝐲 : 
+                 [𝑬𝒑𝒊𝒄 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒆𝒔](https://t.me/EpicBotsSl)
 
  ♡ ㅤ         ❍     ㅤ       ⎙ㅤ          ⌲ 
  ˡᶦᵏᵉ         ᶜᵒᵐᵐᵉⁿᵗ         ˢᵃᵛᵉ          ˢʰᵃʳᵉ
