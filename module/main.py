@@ -114,8 +114,35 @@ ST_BTN = InlineKeyboardMarkup([[
 print("Commands.py Started🔥🌹")
 
 
-@Client.on_message(filters.text & filters.private & filters.group)
+@Client.on_message(filters.text & filters.private)
 async def sendsret(bot, message):
+     await message.delete()
+     await bot.send_sticker(message.chat.id, random.choice(Stcr))
+     text = f"""
+❍⌛ꜱᴇᴀʀᴄʜɪɴɢ ʀᴇꜱᴜʟᴛꜱ..
+  ᪣ 𝐅𝐢𝐥𝐦 𝐍𝐚𝐦𝐞 :  ༺**{message.text}**༻
+  ᪣ 𝐫𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 : ༺**{message.from_user.mention}**༻
+  ᪣ 𝐩𝐨𝐰𝐞𝐫𝐝 𝐛𝐲 : [𝑬𝒑𝒊𝒄 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒆𝒔](https://t.me/EpicBotsSl)
+
+ ♡ ㅤ         ❍     ㅤ       ⎙ㅤ          ⌲ 
+ ˡᶦᵏᵉ         ᶜᵒᵐᵐᵉⁿᵗ         ˢᵃᵛᵉ          ˢʰᵃʳᵉ
+"""
+     reply_markup = InlineKeyboardMarkup([[
+                 InlineKeyboardButton("🍿𝑪𝒍𝒊𝒄𝒌 𝒉𝒆𝒓𝒆 𝒕𝒐 𝒅𝒐𝒘𝒏𝒍𝒐𝒂𝒅🍿",switch_inline_query_current_chat=message.text)
+                 ],
+                 [
+                 InlineKeyboardButton("🔰𝒔𝒉𝒂𝒓𝒆 𝒚𝒐𝒖𝒓 𝒓𝒆𝒔𝒖𝒍𝒕🔰", switch_inline_query=message.text)
+                    ]])
+     await message.reply_text(
+         text=text,
+         reply_markup=reply_markup,
+         disable_web_page_preview=True,
+         quote=True
+     )
+
+
+@Client.on_message(filters.text & filters.group)
+async def sendsre(bot, message):
      await message.delete()
      await bot.send_sticker(message.chat.id, random.choice(Stcr))
      text = f"""
