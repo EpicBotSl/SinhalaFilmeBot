@@ -96,9 +96,7 @@ ST_BTN = InlineKeyboardMarkup([[
                 InlineKeyboardButton('➕ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ➕', url="https://t.me/EpicFilmeBot?startgroup=true")
             ],
             [
-                InlineKeyboardButton('࿉ᴍʏ ꜰɪʟᴍ ᴅᴀᴛᴀʙᴀꜱᴇ࿉', url='https://t.me/+tZqaN4Us6YM2ZjRl')
-            ],
-            [
+                InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ 🔰', url='https://t.me/EpicLivegbot'),
                 InlineKeyboardButton('☑ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/EpicChats'),
                 InlineKeyboardButton('ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ 🇱🇰', url='https://t.me/EpicBotsSl')
             ],
@@ -115,10 +113,42 @@ print("Commands.py Started🔥🌹")
 
 @Client.on_message(filters.text & filters.private)
 async def sendsret(bot, message):
-     await bot.send_message(message.chat.id, f'🔥Search Results For **{message.text}**', reply_markup=InlineKeyboardMarkup([[
-                 InlineKeyboardButton("Click Here",switch_inline_query_current_chat=message.text)
-                 ]]
-                  ))
+     await message.delete()
+     await bot.send_sticker(message.chat.id, random.choice(Stcr))
+     text = f"""
+ ❍⌛ꜱᴇᴀʀᴄʜɪɴɢ ʀᴇꜱᴜʟᴛꜱ..
+ ᪣ 𝐅𝐢𝐥𝐦 𝐍𝐚𝐦𝐞 ༺**{message.text}**༻
+ ᪣ 𝐫𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 ༺**{message.from_user.mention}**༻
+ ᪣ 𝐩𝐨𝐰𝐞𝐫𝐝 𝐛𝐲 [𝑬𝒑𝒊𝒄 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒆𝒔](https://t.me/EpicBotsSl)
+♡ ㅤ         ❍     ㅤ       ⎙ㅤ          ⌲ 
+ˡᶦᵏᵉ         ᶜᵒᵐᵐᵉⁿᵗ         ˢᵃᵛᵉ          ˢʰᵃʳᵉ
+"""
+     reply_markup = InlineKeyboardMarkup([[
+                 InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝒉𝒆𝒓𝒆 𝒕𝒐 𝒅𝒐𝒘𝒏𝒍𝒐𝒂𝒅",switch_inline_query_current_chat=message.text)
+                 ],
+                 [
+                 InlineKeyboardButton("𝒔𝒉𝒂𝒓𝒆 𝒚𝒐𝒖𝒓 𝒓𝒆𝒔𝒖𝒍𝒕", switch_inline_query=message.text)
+                    ]])
+     await message.reply_text(
+         text=text,
+         reply_markup=reply_markup,
+         disable_web_page_preview=True,
+         quote=True
+     )
+
+Stcr = ["CAACAgUAAxkBAAEFMFxiwtruo0b44KutOBE9H6O5nrwKNAACYgQAAhPCYVbfLxDcnj_pZCkE",
+        "CAACAgUAAxkBAAEFMbNiw903JDFCdo7y6joPD9I3rPzSnwACEgQAAnvhYVb2d1CcdP_LGykE",
+        "CAACAgUAAxkBAAEFMb1iw91IsS5-Eh0sjt783srDC7jfEwACUAMAAn0XYFabcpbpaO2lvCkE",
+        "CAACAgUAAxkBAAEFMbtiw91FJUr47uscqy2jM_T2r296-AACggMAAvjAYFZYGXjMrpyZuykE",
+        "CAACAgUAAxkBAAEFMbliw91EbU_c2TzNdgW-deicL86T9wACfgQAAubFYVYNxaLEhZO7wCkE",
+        "CAACAgUAAxkBAAEFMbdiw91CFyTYv2_0j5K8ZwMaLJBxUgACYgQAAhPCYVbfLxDcnj_pZCkE",
+        "CAACAgUAAxkBAAEFMbViw90_GIklK8MHKDpiSvGTHW9VEwACcgMAAkeVYFam2lFEzUxLQCkE",
+        "CAACAgQAAxkBAAEFMcFiw96hyh6UK53JUBxmmAQWYwyDzgAC3RYAAipyxAyQft5EchwjTykE",
+        "CAACAgQAAxkBAAEFMcNiw96jTxmj66qUvfrqLgjPuy_QUgAC3hYAAipyxAyN_X0ooH6yCykE",
+        "CAACAgQAAxkBAAEFMcViw96lRbWH8f6NrCasMVK0CAYoUwAC4xYAAipyxAwZKMgVdrrJwikE",
+        "CAACAgQAAxkBAAEFMcdiw96o5bkasgABXxzeOzI8NtnNAkUAAuIWAAIqcsQM3-htLmmjJV8pBA",
+        "CAACAgQAAxkBAAEFMcliw96wjC6dczUp9G7yKUotIuH8rwAC5BYAAipyxAzAWjB_nUAZIykE"
+   ]
 
 
 print("main.py Started Successfully 🍎🍓")
