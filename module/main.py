@@ -54,7 +54,8 @@ async def send_msg(user_id, message):
 
 @Client.on_message(filters.command("start"))
 async def start(client, message):
-    #return
+    if await forcesub(client, message):
+       return
     chat_id = message.from_user.id
     if not await database.is_user_exist(chat_id):
         data = await client.get_me()
