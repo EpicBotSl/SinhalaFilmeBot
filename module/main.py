@@ -67,6 +67,7 @@ async def start(client, message):
             )
         else:
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
+    await message.delete()
     await message.reply_video("https://telegra.ph/file/64865d56582fa87eba003.mp4", caption=START, reply_markup=ST_BTN)
        
 DATABASE_URI=DATABASE_URI
@@ -96,13 +97,15 @@ ST_BTN = InlineKeyboardMarkup([[
                 InlineKeyboardButton('➕ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ➕', url="https://t.me/EpicFilmeBot?startgroup=true")
             ],
             [
-                InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ 🔰', url='https://t.me/EpicLivegbot'),
-                InlineKeyboardButton('☑ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/EpicChats'),
+                InlineKeyboardButton('🔰 ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ 🔰', url='https://t.me/EpicLivegbot'),
+                InlineKeyboardButton('♻️ꜱᴜᴘᴘᴏʀᴛ♻️', url='https://t.me/EpicChats')
+            ],
+            [
                 InlineKeyboardButton('ᴇᴘɪᴄ ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ 🇱🇰', url='https://t.me/EpicBotsSl')
             ],
             [
                 InlineKeyboardButton('🔄ꜱᴇᴀʀᴄʜ ɪɴʟɪɴᴇ', switch_inline_query_current_chat=''),
-                InlineKeyboardButton('ꜱᴡɪᴛʜᴄ ɪɴʟɪɴᴇ ɪɴ ɢʀᴏᴜᴘ◀', switch_inline_query='')
+                InlineKeyboardButton('🍿ꜱᴡɪᴛʜᴄ ɪɴʟɪɴᴇ ɪɴ ɢʀᴏᴜᴘ◀🍿', switch_inline_query='')
             ]
         ])
 
@@ -111,17 +114,18 @@ ST_BTN = InlineKeyboardMarkup([[
 print("Commands.py Started🔥🌹")
 
 
-@Client.on_message(filters.text & filters.private)
+@Client.on_message(filters.text & filters.private & filters.group)
 async def sendsret(bot, message):
      await message.delete()
      await bot.send_sticker(message.chat.id, random.choice(Stcr))
      text = f"""
- ❍⌛ꜱᴇᴀʀᴄʜɪɴɢ ʀᴇꜱᴜʟᴛꜱ..
- ᪣ 𝐅𝐢𝐥𝐦 𝐍𝐚𝐦𝐞 ༺**{message.text}**༻
- ᪣ 𝐫𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 ༺**{message.from_user.mention}**༻
- ᪣ 𝐩𝐨𝐰𝐞𝐫𝐝 𝐛𝐲 [𝑬𝒑𝒊𝒄 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒆𝒔](https://t.me/EpicBotsSl)
-♡ ㅤ         ❍     ㅤ       ⎙ㅤ          ⌲ 
-ˡᶦᵏᵉ         ᶜᵒᵐᵐᵉⁿᵗ         ˢᵃᵛᵉ          ˢʰᵃʳᵉ
+❍⌛ꜱᴇᴀʀᴄʜɪɴɢ ʀᴇꜱᴜʟᴛꜱ..
+  ᪣ 𝐅𝐢𝐥𝐦 𝐍𝐚𝐦𝐞 :  ༺**{message.text}**༻
+  ᪣ 𝐫𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 : ༺**{message.from_user.mention}**༻
+  ᪣ 𝐩𝐨𝐰𝐞𝐫𝐝 𝐛𝐲 : [𝑬𝒑𝒊𝒄 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒆𝒔](https://t.me/EpicBotsSl)
+
+ ♡ ㅤ         ❍     ㅤ       ⎙ㅤ          ⌲ 
+ ˡᶦᵏᵉ         ᶜᵒᵐᵐᵉⁿᵗ         ˢᵃᵛᵉ          ˢʰᵃʳᵉ
 """
      reply_markup = InlineKeyboardMarkup([[
                  InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝒉𝒆𝒓𝒆 𝒕𝒐 𝒅𝒐𝒘𝒏𝒍𝒐𝒂𝒅",switch_inline_query_current_chat=message.text)
